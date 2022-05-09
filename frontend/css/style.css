@@ -1,20 +1,20 @@
 /* FONTS */
 
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;500&display=swap");
 
 /* GLOBAL STYLES */
 
 :root {
-  --font-primary: "Poppins", sans-serif;
-  --font-secondary: "Arvo", serif;
-  --font-code: "Roboto", monospace;
-  --bg-color: #00163f;
-  --bg-color-transparent: #00163f80;
+  --font-primary: "Encode Sans", sans-serif;
+  --font-secondary: "Encode Sans", serif;
+  --font-code: "Encode Sans", monospace;
+  --bg-color: #232323;
+  --bg-color-transparent: #23232380;
   --font-color: #ffffff;
   --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
-  --header-shadow: var(--accent-color) 0px 0px 5px;
-  --card-shadow: var(--accent-color) 0px 0px 20px;
+  --accent-color: #323232;
+  --header-shadow: #323232;
+  --card-shadow: #323232;
 }
 
 * {
@@ -287,7 +287,7 @@ section {
 }
 
 .total-price-container p {
-  color: var(--accent-color);
+  color: var(--font-color);
 }
 
 /* MINTED CONTAINER */
