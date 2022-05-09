@@ -7,14 +7,14 @@ const { NETWORK } = require(`${basePath}/constants/network.js`);
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "BillyBuffaloSpecial";
-const description = "100 Collectables";
+const namePrefix = "BillyBuffaloTest";
+const description = "7 Collectables";
 const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 100,
+    growEditionSizeTo: 7,
     layersOrder: [
       { name: "Background" },
       { name: "Outline" },
@@ -45,13 +45,13 @@ const LIMIT = 2; // Your API key rate limit
 const CHAIN = 'polygon'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
-const CONTRACT_NAME = 'BillyBuffaloSpecial';
-const CONTRACT_SYMBOL = 'BBS';
+const CONTRACT_NAME = 'BillyBuffaloTest';
+const CONTRACT_SYMBOL = 'BBT';
 const METADATA_UPDATABLE = true; // set to false if you don't want to allow metadata updates after minting
 const OWNER_ADDRESS = '0xfb43aa08c531f8AA6310c29A2A8b562d59BC178E';
 const TREASURY_ADDRESS = '0xfb43aa08c531f8AA6310c29A2A8b562d59BC178E';
 const MAX_SUPPLY = 7; // The maximum number of NFTs that can be minted. CANNOT BE UPDATED!
-const MINT_PRICE = 0; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
+const MINT_PRICE = 0.0001; // Minting price per NFT. Rinkeby = ETH, Polygon = MATIC. CANNOT BE UPDATED!
 const TOKENS_PER_MINT = 100; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
