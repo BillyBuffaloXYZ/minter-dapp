@@ -1,5 +1,5 @@
 const contractAddress = "0x51B9764cdB6B53bA7e349032C94594445a2F26fD"; //Replace with your own contract address
-const chain = 'rinkeby'; // rinkeby or polygon
+const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Billy Buffalo NFT Project!";
 const welcome_h2 = "Connect to MetaMask to Get Started";
