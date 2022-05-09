@@ -14,17 +14,11 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5000,
+    growEditionSizeTo: 7,
     layersOrder: [
       { name: "Background" },
-      { name: "Horns and Snout" },
-      { name: "Accent" },
-      { name: "Hair" },
       { name: "Outline" },
-      { name: "Eyes" },
-      { name: "Neckwear" },
-      { name: "Headwear" },
-      { name: "Mouth" },
+
     ],
   },
 ];
@@ -40,7 +34,7 @@ const format = {
 };
 
 const extraMetadata = {
-  external_url: "https://billybuffalo.xyz", // Replace with your website or remove this line if you do not have one.
+  external_url: "", // Replace with your website or remove this line if you do not have one.
 };
 
 // NFTPort Info
@@ -77,8 +71,8 @@ let CONTRACT_ADDRESS = "CONTRACT"; // If you want to manually include it
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
 const GENERIC_TITLE = CONTRACT_NAME; // Replace with what you want the generic titles to say if you want it to be different from the contract name.
-const GENERIC_DESCRIPTION = "Which Billy Buffalo will you get?"; // Replace with what you want the generic descriptions to say.
-const GENERIC_IMAGE = "https://ipfs.io/ipfs/bafybeiezrgr5csfqxqyxumeny7o25hbuqnkerz6v3hxycdsvb7brfkg3da"; // Replace with your generic image that will display for all NFTs pre-reveal.
+const GENERIC_DESCRIPTION = "REPLACE THIS"; // Replace with what you want the generic descriptions to say.
+const GENERIC_IMAGE = ""; // Replace with your generic image that will display for all NFTs pre-reveal.
 
 // Automatically set contract address if deployed using the deployContract.js script
 try {
@@ -95,7 +89,7 @@ try {
 // END NFTPort Info
 
 const solanaMetadata = {
-  symbol: "YC",
+  symbol: "",
   seller_fee_basis_points: 1000, // Define how much % you want from secondary market sales 1000 = 10%
   external_url: "",
   creators: [
