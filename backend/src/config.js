@@ -14,10 +14,17 @@ const baseUri = "ipfs://NewUriToReplace"; // This will be replaced automatically
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 7,
+    growEditionSizeTo: 5000,
     layersOrder: [
       { name: "Background" },
+      { name: "Horns and Snout" },
+      { name: "Accent" },
+      { name: "Hair" },
       { name: "Outline" },
+      { name: "Eyes" },
+      { name: "Neckwear" },
+      { name: "Headwear" },
+      { name: "Mouth" },
 
     ],
   },
@@ -42,7 +49,7 @@ const extraMetadata = {
 // ** REQUIRED **
 const AUTH = process.env.NFTPORT_API_KEY; // Set this in the .env file to prevent exposing your API key when pushing to Github
 const LIMIT = 2; // Your API key rate limit
-const CHAIN = 'polygon'; // only rinkeby or polygon
+const CHAIN = 'rinkeby'; // only rinkeby or polygon
 
 // REQUIRED CONTRACT DETAILS THAT CANNOT BE UPDATED LATER!
 const CONTRACT_NAME = 'Billy Buffalo Collection';
@@ -55,7 +62,7 @@ const MINT_PRICE = 0.0001; // Minting price per NFT. Rinkeby = ETH, Polygon = MA
 const TOKENS_PER_MINT = 5000; // maximum number of NFTs a user can mint in a single transaction. CANNOT BE UPDATED!
 
 // REQUIRED CONTRACT DETAILS THAT CAN BE UPDATED LATER.
-const PUBLIC_MINT_START_DATE = "2023-05-3111:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
+const PUBLIC_MINT_START_DATE = "2023-05-31T11:30:48+00:00"; // This is required. Eg: 2022-02-08T11:30:48+00:00
 
 // OPTIONAL CONTRACT DETAILS THAT CAN BE UPDATED LATER.
 const PRESALE_MINT_START_DATE = "2022-05-06T11:30:48+00:00"; // Optional. Eg: 2022-02-08T11:30:48+00:00
@@ -66,7 +73,7 @@ const PREREVEAL_TOKEN_URI = null; // only update if you want to manually set the
 const PRESALE_WHITELISTED_ADDRESSES = ["0xfb43aa08c531f8AA6310c29A2A8b562d59BC178E"]; // only update if you want to manually set the whitelisted addresses
 
 // ** OPTIONAL **
-let CONTRACT_ADDRESS = "CONTRACT"; // If you want to manually include it
+let CONTRACT_ADDRESS = "0x8596712A65b0E155DC6e4CFEa3b7424a6E391B7e"; // If you want to manually include it
 
 // Generic Metadata is optional if you want to reveal your NFTs
 const GENERIC = false; // Set to true if you want to upload generic metas and reveal the real NFTs in the future
