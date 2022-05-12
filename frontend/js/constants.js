@@ -1,4 +1,4 @@
-const contractAddress = "0x8e8c68Dc29ecc0C2CDD93f6289C0d2de7A594e0c"; //Replace with your own contract address
+const contractAddress = "0x7931c5AF4DbD82C99D5e6273426D8d6e8E98DF35"; //Replace with your own contract address
 const chain = 'polygon'; // rinkeby or polygon
 
 const welcome_h1 = "Welcome to the Billy Buffalo NFT Project!";

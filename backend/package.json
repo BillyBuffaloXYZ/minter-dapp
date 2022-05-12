@@ -33,6 +33,7 @@
     "update_royalty_share": "node utils/nftport/updateContract.js -u royalty_share",
     "update_royalty_address": "node utils/nftport/updateContract.js -u royalty_address",
     "update_base_uri": "node utils/nftport/updateContract.js -u base_uri",
+    "mint": "node utils/nftport/mint %npm_config_start% %npm_config_end%",
     "update_prereveal_token_uri": "node utils/nftport/updateContract.js -u prereveal_token_uri",
     "⏬⏬⏬": "FOR MAC USERS: Replace %npm_config_xyz% with $npm_config_start ⏬⏬⏬",
     "refresh_os": "node utils/functions/refreshOpensea %npm_config_start% %npm_config_end%"
